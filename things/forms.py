@@ -8,6 +8,6 @@ class ThingForm(forms.ModelForm):
     class Meta:
         model = Thing
         fields = ["name", "description", "quantity"]
-        widgets = {"description": forms.TextArea(),
+        widgets = {"description": forms.Textarea(),
                     "quantity": forms.NumberInput()}
 
